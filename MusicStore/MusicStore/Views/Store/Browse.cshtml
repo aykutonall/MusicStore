@@ -7,7 +7,7 @@
 <h2>Browsing Genre: @Model.Name</h2>
 
 <ul>
-    @foreach(var album in Model.Albums)
+    @foreach (var album in Model.Albums)
     {
         <li>
             @Html.ActionLink(album.Title, "Details", new { id = album.AlbumId })
@@ -15,3 +15,4 @@
     }
 </ul>
 
+Albums
